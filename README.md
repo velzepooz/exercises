@@ -1,2 +1,2 @@
-# exercises
+# Exercises
 Different exercises and my solutions
