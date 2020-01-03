@@ -1,7 +1,11 @@
 from random import randint
+
+
 x = randint(1, 100)
 a = 0
 count = 0
+
+
 while True:
     a = int(input('Угадайте число от 1 до 100. Введите его: '))
     count += 1
