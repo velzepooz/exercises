@@ -1,0 +1,19 @@
+from random import randint
+x = randint(1, 100)
+a = 0
+count = 0
+while True:
+    a = int(input('Угадайте число от 1 до 100. Введите его: '))
+    count += 1
+    if a == x:
+        print(f'Вы угадали!!! Спасибо за игру. Вы угадали с {count} попытки!')
+        b = input('Хотите еще сыграть? Yes/No ')
+        if b == 'Yes' or b == 'yes':
+            count = 0
+            continue
+        else:
+            break
+    elif a < x:
+        print('Ваше число меньше загаданного. Попробуйте еще раз =)')
+    else:
+        print('Ваше число больше загаданного. Попробуйте еще раз =)')
