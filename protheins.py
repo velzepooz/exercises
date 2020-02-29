@@ -28,7 +28,8 @@ class NutritionInfo:
         return int(self.fats * 9 + (self.carbs + self.proteins) * 4.2)
 
     def __add__(self, other):
-        return NutritionInfo((self.proteins + other.proteins), (self.carbs + other.carbs), (self.fats + other.fats))
+        return NutritionInfo((self.proteins + other.proteins),
+                             (self.carbs + other.carbs), (self.fats + other.fats))
 
 
 curd = NutritionInfo(18, 3, 9)
